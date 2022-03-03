@@ -9,11 +9,46 @@
 <body>
     <form action="">
         <p>
-            <label for = "username">Username:</label>
-            <input type="text" name="username" id="username" title='Introduce
-        your name' autocomplete="name"/>
-        </p>
+            <label for = "username">*Nombre de usuario:</label>
+            <input type="text" name="username" id="username" title="Introduce tu nombre de usuario" required="required">
         
+        </p>
+
+        <p>
+            <label for = "pwd">*Contraseña:</label>
+            <input type = "password" id="pwd" name="pwd" title="Introduce tu contraseña" required="required"> 
+        </p>
+
+        <p>
+            <label for = "nombre">*Nombre:</label>
+            <input type="text" name="nombre" id="nombre" title="Introduce tu nombre" autocomplete="name" required="required">
+        </p>
+
+        <p>
+            <label for="apellido">*Primer apellido:</label>
+            <input type="text" name="apellido" id="apellido" title="Introduce tu primer apellido" autocomplete="family-name" required="required">
+        </p>
+
+        <p>
+            <label for="fechanacimiento">*Fecha de nacimiento:</label>
+            <input type="date" name="fechanacimiento" id="fechanacimiento" title="Selecciona tu fecha de nacimiento" required="required">
+        </p>
+
+        <p>
+            <label for="email">*E-mail:</label>
+            <input type="email" name="email" id="email" title="Introduce tu email" autocomplete="email" required="required">
+        </p>
+
+        <p>
+            <label for="telefono">Telefono:</label>
+            <input type="tel" id="telefono" name="telefono" title="Introduce tu número de teléfono" autocomplete="tel-country-code">
+        </p>
+
+    <p>
+        <label for="colorfavorito">Color favorito:</label>
+        <input type ="color" name="colorfavorito" id="colorfavorito" title="Selecciona tu color favorito">
+    </p>
+
         <input type="submit" value="Submit" />
    </form>
 </body>
