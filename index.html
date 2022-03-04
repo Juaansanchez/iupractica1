@@ -7,59 +7,77 @@
     <title>Formulario</title>
 </head>
 <body>
+    <b>* Campos obligatorios</b>
     <form action="">
+        <table>
         <p>
-            <label for = "username">*Nombre de usuario:</label>
+            <tr>
+            <td align="right"><label for = "username"><b>*</b>Nombre de usuario:</label>
             <input type="text" name="username" id="username" 
-            title="Introduce tu nombre de usuario" required="required">
-        
+            title="Introduce tu nombre de usuario" required="required"></td>
+            </tr>
         </p>
 
         <p>
-            <label for = "pwd">*Contraseña:</label>
+            <tr>
+            <td align="right"><label for = "pwd"><b>*</b>Contraseña:</label>
             <input type = "password" id="pwd" name="pwd" 
-            title="Introduce tu contraseña" required="required"> 
+            title="Introduce tu contraseña" required="required"></td> 
+            </tr>
         </p>
 
         <p>
-            <label for = "nombre">*Nombre:</label>
+            <tr>
+            <td align="right"><label for = "nombre"><b>*</b>Nombre:</label>
             <input type="text" name="nombre" id="nombre" title="Introduce tu nombre" 
-            autocomplete="name" required="required">
+            autocomplete="name" required="required"></td>
+            </tr>
         </p>
 
         <p>
-            <label for="apellido">*Primer apellido:</label>
+            <tr>
+            <td align="right"><label for="apellido"><b>*</b>Primer apellido:</label>
             <input type="text" name="apellido" id="apellido" 
             title="Introduce tu primer apellido" autocomplete="family-name" 
-            required="required">
+            required="required"></td>
+            </tr>
         </p>
 
         <p>
-            <label for="fechanacimiento">*Fecha de nacimiento:</label>
+            <tr>
+            <td align="right"><label for="fechanacimiento"><b>*</b>Fecha de nacimiento:</label>
             <input type="date" name="fechanacimiento" id="fechanacimiento" 
-            title="Selecciona tu fecha de nacimiento" required="required">
+            title="Selecciona tu fecha de nacimiento" required="required"></td>
+            </tr>
         </p>
 
         <p>
-            <label for="email">*E-mail:</label>
+            <tr>
+            <td align="right"><label for="email"><b>*</b>E-mail:</label>
             <input type="email" name="email" id="email" title="Introduce tu email" 
-            autocomplete="email" required="required">
+            autocomplete="email" required="required"></td>
+            </tr>
         </p>
 
         <p>
-            <label for="telefono">Telefono:</label>
+            <tr>
+            <td align="right"><label for="telefono">Telefono:</label>
             <input type="tel" id="telefono" name="telefono" 
             title="Introduce tu número de teléfono" autocomplete="tel-country-code"
-            placeholder="xxx xx xx xx">
+            placeholder="xxx xx xx xx"></td>
+            </tr>
         </p>
 
-    <p>
-        <label for="colorfavorito">Color favorito:</label>
-        <input type ="color" name="colorfavorito" id="colorfavorito" 
-        title="Selecciona tu color favorito">
-    </p>
+        <p>
+            <tr>
+            <td align="right"><label for="colorfavorito">Color favorito:</label>
+            <input type ="color" name="colorfavorito" id="colorfavorito" 
+            title="Selecciona tu color favorito"></td>
+            </tr>
+        </p>
 
-        <input type="submit" value="Submit" />
+        <td align="center"><input type="submit" value="Submit" /></td>
+    </table>
    </form>
 </body>
 </html>
